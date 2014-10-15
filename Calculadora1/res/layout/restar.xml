@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/numDos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="36dp"
+        android:layout_y="50dp"
+        android:text="Introduce el primer numero:" />
+
+    <TextView
+        android:id="@+id/numUno1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="162dp"
+        android:text="Introduce el segundo numero:" />
+
+    <EditText
+        android:id="@+id/restaNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="44dp"
+        android:layout_y="86dp"
+        android:ems="10" android:inputType="number">
+
+        <requestFocus />
+    </EditText>
+ <EditText
+        android:id="@+id/restaNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="44dp"
+        android:layout_y="195dp"
+        android:ems="10" android:inputType="number" />
+
+    <Button
+        android:id="@+id/calcularResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="85dp"
+        android:layout_y="280dp"
+        android:text="Calcular Resta" />
+
+    <TextView
+        android:id="@+id/resultadoResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="116dp"
+        android:layout_y="377dp"
+        android:text="TextView" />
+
+</AbsoluteLayout>
+    
