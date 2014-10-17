@@ -24,6 +24,7 @@
         </activity>
         <activity android:label="Sumar" android:name=".Sumar"></activity>
         <activity android:label="Restar" android:name=".Restar"></activity>
+        <activity android:label="registro" android:name=".Registro"></activity>
     </application>
 
 </manifest>

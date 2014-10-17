@@ -12,7 +12,7 @@ import android.view.MenuInflater;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
-	private Button botonSumar,botonRestar;
+	private Button botonSumar,botonRestar,botonRegistro;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
       //IDENTIFICACION 
         botonRestar = (Button) findViewById(R.id.restar);
         botonSumar = (Button) findViewById(R.id.sumar);
+        botonRegistro= (Button) findViewById(R.id.registro);
         
         //AÑADIR LISTENER
         botonSumar.setOnClickListener(new OnClickListener() {
@@ -35,7 +36,15 @@ public class MainActivity extends Activity {
         		lanzarRestar();
         	}
         });
+        
+        botonRegistro.setOnClickListener(new OnClickListener() {
+        	
+        	public void onClick (View v){
+        		lanzarRegistro();
+        	}
+        });
     }
+    
    
     //LANZAMIENTO DE ACTIVIDADES
     public void lanzarSumar(){
@@ -45,6 +54,11 @@ public class MainActivity extends Activity {
     }
     public void lanzarRestar(){
     	Intent i = new Intent (this, Restar.class);
+    	startActivity(i);
+    	
+    }
+    public void lanzarRegistro(){
+    	Intent i = new Intent (this, Registro.class);
     	startActivity(i);
     	
     }
