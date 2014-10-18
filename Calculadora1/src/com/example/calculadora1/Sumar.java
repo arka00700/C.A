@@ -44,8 +44,8 @@ public class Sumar extends Activity {
 		int numero1 = Integer.parseInt(num1.getText().toString()); 
 		int numero2 = Integer.parseInt(num2.getText().toString());
 		int res=numero1+numero2;
-		
-		LaBD.getMiBD(getApplicationContext()).insertarSumBD(numero1, numero2);
+		System.out.println(res);
+		//LaBD.getMiBD(getApplicationContext()).insertarSumBD(numero1, numero2);
 		
 		TextView v = (TextView) findViewById(R.id.textView1);
 		v.setText("El resultado es: " + res);
